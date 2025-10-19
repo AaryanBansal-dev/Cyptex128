@@ -1,0 +1,12 @@
+#!/bin/bash
+# Wrapper to launch Cyptex128 TUI (runs the bundled release binary)
+
+BINARY="$(dirname "$0")/target/release/cyptex128"
+
+if [ ! -x "$BINARY" ]; then
+  echo "Release binary not found. Building..."
+  cargo build --release || exit 1
+fi
+
+# Launch TUI directly
+"$BINARY" tui
