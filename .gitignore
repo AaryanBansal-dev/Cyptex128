@@ -1,0 +1,112 @@
+# Rust build artifacts
+target/
+debug/
+release/
+
+# Cargo.lock (uncomment if this is a library)
+# Cargo.lock
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS-specific files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.backup
+
+# Log files
+*.log
+logs/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Test coverage
+*.profraw
+coverage/
+
+# Documentation build artifacts
+book/
+docs/build/
+
+# Backup files
+*.orig
+*.rej
+
+# Performance test artifacts
+perf.data
+perf.data.old
+
+# Binary executables (if not committed)
+# cyptex128
+
+# Development notes and drafts
+*_OLD.md
+*_DRAFT.md
+DRAFT_*
+*_backup.md
+
+# Test data
+TEST/
+test_data/
+*.test
+
+# Package files
+*.deb
+*.rpm
+*.pkg
+*.dmg
+*.appimage
+
+# Windows executables
+*.exe
+*.dll
+*.lib
+*.pdb
+
+# macOS
+*.dSYM/
+
+# Linux
+*.so
+*.a
+
+# Generated documentation
+target/doc/
+
+# Rustfmt backup files
+*.rs.bk
+
+# Clippy cache
+.clippy/
+
+# Rust analyzer
+rust-project.json
+
+# Benchmark results
+benchmarks/
+
+# CI/CD
+.github/workflows/*.log
+.github/actions/*/dist/
+
+# Local development
+.local/
+dev/
+scratch/
