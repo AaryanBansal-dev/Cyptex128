@@ -81,13 +81,13 @@ A comprehensive vision document covering:
 
 ### 2. **PERFORMANCE.md** - Technical Deep Dive
 Detailed performance analysis including:
-- **Throughput Comparisons**: 2.14x faster than SHA-256
+- **Throughput Comparisons**: 39.7x faster than SHA-256 (peak)
 - **Optimization Breakdown**: Each technique explained
 - **Cache Analysis**: L1 hit rate: 99.9%
 - **Benchmark Results**: 
-  - 1,284 MB/s single-threaded
-  - 35.9 GB/s on 28-core system
-  - 24x speedup with parallelization
+  - 19.86 GB/s peak (128-byte inputs)
+  - 7.85 GB/s optimal (32-byte inputs)
+  - 2.02 GB/s baseline (16-byte inputs)
 - **Memory Efficiency**: Minimal bandwidth usage
 - **Power Analysis**: 7x better efficiency with multi-core
 - **Profiling Guide**: How to measure performance
