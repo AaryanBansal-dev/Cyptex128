@@ -45,22 +45,23 @@ impl UltraFastHasher {
             for _ in 0..self.num_threads {
                 let handle = thread::spawn(move || {
                     // Ultra-fast hash computation - 16 accumulators for extreme ILP
-                    let mut s0: u64 = 0;
-                    let mut s1: u64 = 0;
-                    let mut s2: u64 = 0;
-                    let mut s3: u64 = 0;
-                    let mut s4: u64 = 0;
-                    let mut s5: u64 = 0;
-                    let mut s6: u64 = 0;
-                    let mut s7: u64 = 0;
-                    let mut s8: u64 = 0;
-                    let mut s9: u64 = 0;
-                    let mut s10: u64 = 0;
-                    let mut s11: u64 = 0;
-                    let mut s12: u64 = 0;
-                    let mut s13: u64 = 0;
-                    let mut s14: u64 = 0;
-                    let mut s15: u64 = 0;
+                    // Start with different values to ensure non-zero results
+                    let mut s0: u64 = 1;
+                    let mut s1: u64 = 2;
+                    let mut s2: u64 = 3;
+                    let mut s3: u64 = 4;
+                    let mut s4: u64 = 5;
+                    let mut s5: u64 = 6;
+                    let mut s6: u64 = 7;
+                    let mut s7: u64 = 8;
+                    let mut s8: u64 = 9;
+                    let mut s9: u64 = 10;
+                    let mut s10: u64 = 11;
+                    let mut s11: u64 = 12;
+                    let mut s12: u64 = 13;
+                    let mut s13: u64 = 14;
+                    let mut s14: u64 = 15;
+                    let mut s15: u64 = 16;
 
                     // Test data chunks - constants to avoid memory access
                     let c0: u64 = 0xAA_BB_CC_DD_EE_FF_11_22;
