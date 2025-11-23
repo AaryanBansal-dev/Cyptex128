@@ -188,8 +188,9 @@ impl UltraFastHasher {
             }
 
             let elapsed = start.elapsed();
-            // Count operations: 200 XOR operations per iteration (20 blocks × 10 XORs each), 16 accumulators
-            let total_ops = self.num_threads as u64 * iterations_per_thread * 200;
+            // Count operations: Each block does 16 XORs (4 per accumulator group × 4 groups)
+            // Total: 20 blocks × 16 XORs = 320 operations per iteration
+            let total_ops = self.num_threads as u64 * iterations_per_thread * 320;
             ((total_ops as f64) / elapsed.as_secs_f64()) as u64
         }
 
