@@ -1,6 +1,6 @@
 # Cyptex128 - Ultra-Fast 128-bit Hashing System for Big Data Compression
 
-A revolutionary hashing system written in Rust, optimized for petabyte-scale data operations. **The fastest hasher ever created** - achieving up to 48.8 billion operations/second and 43.7 GB/s throughput, enabling practical data deduplication, compression, and content-addressed storage for massive datasets.
+A revolutionary hashing system written in Rust, optimized for petabyte-scale data operations. **One of the fastest hasher ever created** - achieving up to 48.8 billion operations/second and 43.7 GB/s throughput, enabling practical data deduplication, compression, and content-addressed storage for massive datasets.
 
 ## 🚀 Key Metrics
 
